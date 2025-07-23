@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'bebas';
+  src: url('./assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fgrotesk';
+  src: url('./assets/fonts/FoundersGrotesk-Medium.otf') format('opentype');
+}
+@import "tailwindcss";
+
+@theme{
+  --font-bebas: 'bebas', sans-serif;
+  --font-Fgrotesk: 'Fgrotesk', sans-serif;
+}
+
+*{
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+} 
