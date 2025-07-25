@@ -1,5 +1,5 @@
 import React from "react";
-import "./Section4.css";
+
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -73,18 +73,18 @@ const Section4 = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-[100vh]">
-      <div className=" text-white px-24 py-10">
-        <p ref={textRef} className="text-5xl leading-snug fade-text">
-          Welcome to our interactive experience <br />
-          Discover the <span>power</span> of web animations <br />
-          Scroll down to see the <span>magic</span> unfold <br />
-          Watch as the <span>colors</span> transform before you <br />
-          Let the <span>creativity</span> flow through each scroll <br />
-          Experience the <span>beauty</span> of modern web design
+    <div className="w-full min-h-[60vh] ">
+      <div className=" text-white px-24 py-10 ">
+        <p ref={textRef} className="text-3xl leading-snug fade-text tracking-wide">
+          Welcome to our <span>Urban Minkey</span> is an <span>Indian  </span>
+          streetwear brand based out of <span>Mumbai</span>. We love street culture and have
+          created a  <span>collection</span> of clothing inspired by our favorite subcultures <br />
+          Explore the <span>Royal Enfield X Urban Monkey</span> or <span>MTV X Urban Monkey</span> collection!!!!<br />
+          Collaborations <span>Royal Enfield X UM</span>, <span>MTV X UM</span>, <span>PlayBoy X UM</span>, <span>Gully-Gang X UM</span><br /> 
+          <span>Urban Monkey</span> collaborated with celebrities such as <span>Bhuvan Bam</span>, <span>Raftaar</span>, <span>Gully-Gang</span> <span>Ranvijay Singh</span>.
+          Experience the <span>beauty</span> of modern design
         </p>
       </div>
-      
     </div>
   );
 };

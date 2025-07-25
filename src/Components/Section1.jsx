@@ -10,12 +10,20 @@ gsap.registerPlugin(SplitText);
 const Section1 = () => {
   const urbanRef = useRef(null);
   const monkeyRef = useRef(null);
+  const paraRef = useRef(null);
   const [urbanText, setUrbanText] = useState("URBAN");
   const [monkeyText, setMonkeyText] = useState("MONKEY");
 
   useEffect(() => {
-  const animateText = (ref, newText) => {
+    const animateText = (ref, newText) => {
     const splitOut = new SplitText(ref.current, { type: "chars" });
+    
+    gsap.fromTo(
+      paraRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+    );
+  
 
     gsap.to(splitOut.chars, {
       y: -100,
@@ -60,7 +68,7 @@ const Section1 = () => {
     // Initial animation
     swap();
 
-    const interval = setInterval(swap, 5000);
+    const interval = setInterval(swap, 3000);
     return () => clearInterval(interval);
   };
 
@@ -93,8 +101,8 @@ const Section1 = () => {
           </h1>
           <FaRegRegistered className="text-red-800 text-7xl absolute left-[42%] top-[-35%] " />
         </div>
-        <div className="mark relative w-[50%] ">
-          <h1 className="text-2xl text-[#bdb5a9] font-Fgrotesk tracking-wide leading-[2vw] p-4">
+        <div  className="mark3 relative w-[50%] ">
+          <h1 ref={paraRef} className="text-2xl text-[#bdb5a9] font-Fgrotesk tracking-wide leading-[2vw] p-4">
             WE DIDN'T JUST REVIVE OUR ARCHIVES-WE REBUILT THEM. LEGACY PIECES,
             REIMAGINED WITH TODAY'S FITS, FABRICS, AND FINESSE.
           </h1>
@@ -111,14 +119,14 @@ const Section1 = () => {
           alt="flotman"
         />
 
-        <div className="absolute bottom-20 ml-5">
-          <h1 className="text-[4vw] font-bebas text-[#ECDFCC] leading-[3vw]">
+        <div className="poster absolute bottom-20 ml-5">
+          <h1 ref={paraRef} className="text-[4vw] font-bebas text-[#ECDFCC] leading-[3vw]">
             STREET
           </h1>
-          <h1 className="text-[4vw] font-bebas text-[#ECDFCC] leading-[3vw]">
+          <h1 ref={paraRef} className="text-[4vw] font-bebas text-[#ECDFCC] leading-[3vw]">
             STYLE
           </h1>
-          <h1 className="text-[4vw] font-bebas text-[#ECDFCC] leading-[3vw]">
+          <h1 ref={paraRef} className="text-[4vw] font-bebas text-[#ECDFCC] leading-[3vw]">
             EVOLUTION
           </h1>
         </div>

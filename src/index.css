@@ -7,11 +7,18 @@
   font-family: 'Fgrotesk';
   src: url('./assets/fonts/FoundersGrotesk-Medium.otf') format('opentype');
 }
+
+@font-face {
+  font-family: 'playwrite';
+  src: url('./assets/fonts/DancingScript.ttf') format('truetype');
+}
+
 @import "tailwindcss";
 
 @theme{
   --font-bebas: 'bebas', sans-serif;
   --font-Fgrotesk: 'Fgrotesk', sans-serif;
+  --font-playwrite: 'playwrite', sans-serif;
 }
 
 *{

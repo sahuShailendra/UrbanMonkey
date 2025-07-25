@@ -1,0 +1,38 @@
+
+.svg, .svg2, .svg3 {
+    width: 100%;
+    height: 100vh;
+    mask-image: url("../assets/download.svg");
+    mask-size: 0%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: all cubic-bezier(0.14, 0, 0.22, 1) 1s;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/royal.png");
+    background-size: 130%;
+    background-position: center;
+    transition: all cubic-bezier(0.14, 0, 0.22, 1) 1s;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/dvine.jpg");
+    background-size: 130%;
+    background-position: center;
+    transition: all cubic-bezier(0.14, 0, 0.22, 1) 1s;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/playboy.jpg");
+    background-size: 130%;
+    background-position: center;
+    transition: all cubic-bezier(0.14, 0, 0.22, 1) 1s;
+}
+

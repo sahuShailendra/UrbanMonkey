@@ -130,11 +130,11 @@ const Section3 = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container w-full min-h-[100vh]">
       <section className="steps" ref={sectionRef}>
         <div className="step-counter">
           <div className="counter-title">
-            <h1>NEXT</h1>
+            <h1>NEW DROP</h1>
           </div>
           <div className="count">
             <div className="count-container" ref={countContainerRef}>
