@@ -1,7 +1,32 @@
 import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const nvlink = [
+    {
+      page: "ABOUT",
+      to: "/",
+    },
+    {
+      page: "SALE",
+      to: "/",
+    },
+    {
+      page: "BRAND",
+      to: "/",
+    },
+    {
+      page: "LETEST",
+      to: "/",
+    },
+    {
+      page: "LOGIN",
+      to: "/Login",
+    },
+  ]
+
  const navbarRef = useRef(null);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -39,10 +64,13 @@ const Navbar = () => {
         <h1>URBAN MONKEY</h1>
       </div>
       <div className="links flex gap-10 bg-white/10 backdrop-blur-md py-3 px-10 rounded-full ">
-        {["ABOUT", "SALE", "BRAND", "LETEST", "UPCOMING"].map((M, i) => (
-          <a key={i} className="text-md font-light cursor-pointer  rounded-full">
-            {M}
-          </a>
+        {nvlink.map((M, i) => (
+          <Link 
+          to={M.to}
+          key={i} 
+          className="text-md font-light cursor-pointer  rounded-full">
+            {M.page}
+          </Link>
         ))}
       </div>
       <div className="categroy bg-white/20 backdrop-blur-md py-3 px-5 rounded-full">

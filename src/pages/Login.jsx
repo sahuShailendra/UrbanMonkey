@@ -7,10 +7,13 @@ const Login = () => {
 
   const {register, reset, handleSubmit} = useForm()
 
-  
+  const loginhandler = (user) =>{
+    console.log(user)   
+    navigate('/')
+  }
 
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div className="w-full min-h-[100vh] flex justify-center items-center">
       <div className="w-full  flex flex-col justify-center lg:px-8 max-w-xl py-6 bg-white rounded-2xl shadow-2xl">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm ">
           <h1 className="mx-auto text-4xl w-auto text-center font-medium text-gray-400 font-serif">

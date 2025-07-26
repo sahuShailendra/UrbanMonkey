@@ -1,7 +1,7 @@
 import React from "react";
 import founder from '../assets/founder.jpg'
 
-const Section7 = () => {
+const About = () => {
   return (
     <div className="w-full  ">
       <div className="w-full px-10 py-6">
@@ -44,4 +44,4 @@ const Section7 = () => {
   );
 };
 
-export default Section7;
+export default About;

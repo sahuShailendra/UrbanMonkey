@@ -7,11 +7,11 @@ import eyewearCard from '../assets/eyewear.jpg'
 import tshirtCard from '../assets/tshirt.jpg'
 import jacketCard from '../assets/jacket.jpg'
 import accessCard from '../assets/accessories.jpg'
-import './Section3.css';
+import './Cardro.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Section3 = () => {
+const Cardro = () => {
   const cardsRef = useRef([]);
   const countContainerRef = useRef(null);
   const sectionRef = useRef(null);
@@ -170,4 +170,4 @@ const Section3 = () => {
   );
 };
 
-export default Section3;
+export default Cardro;

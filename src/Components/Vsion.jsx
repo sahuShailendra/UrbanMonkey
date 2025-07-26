@@ -4,7 +4,7 @@ import { ScrollTrigger} from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Section6 = () => {
+const Vsion = () => {
     const sectionRef = useRef(null);
 
     useEffect(() => {
@@ -69,4 +69,4 @@ const Section6 = () => {
   );
 };
 
-export default Section6;
+export default Vsion;

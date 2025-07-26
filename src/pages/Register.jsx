@@ -11,6 +11,14 @@ const Register = () => {
   
   const navigate = useNavigate()
 
+const Registerhandler = (user) =>{
+    user.id = nanoid()
+    user.isAdmin = false;
+    user.cart = []
+    console.log(user)
+    
+    navigate("/Login")
+  }
 
 
   return  (

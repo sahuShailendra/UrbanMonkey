@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Section5.css";
+import "./Collab2.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -7,7 +7,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
-const Section5 = () => {
+const Collab2 = () => {
   const ref = useRef();
   useGSAP(
     () => {
@@ -73,4 +73,4 @@ const Section5 = () => {
   );
 };
 
-export default Section5;
+export default Collab2;

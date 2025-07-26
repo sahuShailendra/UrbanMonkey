@@ -8,7 +8,7 @@ import Lenis from "lenis"; //
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Section4 = () => {
+const Collab = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -89,4 +89,4 @@ const Section4 = () => {
   );
 };
 
-export default Section4;
+export default Collab;
