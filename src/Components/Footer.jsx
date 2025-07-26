@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#8f8e8e] text-black px-6 md:px-12 py-12">
+    <footer className="bg-[#8f8e8e] text-black px-6 md:px-12 py-12 font-bebas tracking-wider">
       {/* Main Footer Links */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
         {/* COOL STUFF */}
